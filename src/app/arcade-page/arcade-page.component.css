@@ -1,0 +1,336 @@
+.arcade-page-color {
+  background-color: #000b1d;
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 50px;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+}
+
+#arcade-background {
+  background-image: linear-gradient(
+      180.17deg,
+      rgba(1, 19, 47, 0) 21.81%,
+      #000b1d 93.47%
+    ),
+    url("../../assets/img/arcade-background.jpg");
+  width: 100vw;
+  height: 50vh;
+  background-position: 0% 52%;
+}
+
+p,
+h1,
+h4,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Arcade Games */
+.arcade-header-container h1 {
+  position: absolute;
+  font-size: 90px;
+  left: 90px;
+  width: 1000px;
+  height: 86px;
+  top: 120px;
+  line-height: 78px;
+  font-weight: 900;
+}
+
+/* Beat your friends */
+.arcade-header-container h4 {
+  position: absolute;
+  width: 1000px;
+  height: 58px;
+  left: 90px;
+  top: 170px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Brought to you by */
+.arcade-header-container p {
+  position: absolute;
+  width: 300px;
+  height: 25px;
+  left: 1100px;
+  top: 210px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 17px;
+}
+
+#arcade-logo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 1320px;
+  top: 140px;
+}
+
+/*SMALL SCREENVIEWS*/
+@media (max-width:1100px) {
+  .game-display-boxes-container {
+    margin: -225px auto 0 auto;
+    width: 350px;
+    margin-left: 90px;
+  }
+  .snake-eater, .terra-defender, .vektor-kommander {
+    margin-bottom: 130px;
+  }
+}
+
+/* LARGE SCREENVIEWS */
+@media (min-width: 1100px) {
+  .game-display-boxes-container {
+    display: flex;
+    justify-content: space-between;
+    margin: -225px auto 0 auto;
+    width: 70vw;
+    margin-left: 90px;
+  }
+}
+
+.game-display-boxes-container img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+/* GAME DESCRIPTION */
+.snake-eater p,
+.terra-defender p,
+.vektor-kommander p {
+  text-align: center;
+  padding: 20px;
+}
+
+.snake-eater {
+  /* width: 350px; */
+  flex-basis: 27%;
+  height: 450px;
+  /* left: 136px; */
+
+  /* margin-right: 50px; */
+  /* flex: 1; */
+  box-sizing: border-box;
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: 8px 8px 20px #006daa;
+}
+
+.terra-defender {
+  /* width: 350px; */
+  flex-basis: 27%;
+  height: 450px;
+
+  /* margin-right: 50px; */
+  /* flex: 1; */
+  box-sizing: border-box;
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: 8px 8px 20px #aa0a00;
+}
+
+.vektor-kommander {
+  /* width: 350px; */
+  flex-basis: 27%;
+  height: 450px;
+
+  /* margin-right: 50px; */
+  /* flex: 1; */
+  box-sizing: border-box;
+  background: #000000;
+  border: 2px solid #ffffff;
+  box-shadow: 8px 8px 20px #aa00a3;
+}
+
+.play-buttons-container {
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+  /* justify-content: flex-end; */
+  width: 1300px;
+  margin-left: 100px;
+}
+
+#button1 {
+  margin-top: 90px;
+  margin-left: 20px;
+  flex-basis: 30%;
+  width: 306px;
+  height: 55px;
+  /* margin-right: 110px; */
+  /* flex: 1; */
+
+  background: #006daa;
+  border: none;
+  box-shadow: 4px 4px 20px #347ca4;
+  border-radius: 100px;
+
+  /* PLAY */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+#button2 {
+  margin-top: 90px;
+  margin-left: 20px;
+  flex-basis: 30%;
+  width: 306px;
+  height: 55px;
+  /* margin-right: 110px; */
+  /* flex: 1; */
+
+  background: #aa0a00;
+  border: none;
+  box-shadow: 4px 4px 20px #c8382f;
+  border-radius: 100px;
+
+  /* PLAY */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+#button3 {
+  margin-top: 90px;
+  margin-left: 20px;
+  flex-basis: 30%;
+  width: 306px;
+  height: 55px;
+  /* margin-right: 110px; */
+  /* flex: 1; */
+
+  background: #aa00a3;
+  border: none;
+  box-shadow: 4px 4px 20px #b639b1;
+  border-radius: 100px;
+
+  /* PLAY */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* #terra-defender-button button {
+  width: 306px;
+  height: 55px;
+  flex: 1;
+
+  background: #aa0a00;
+  border: none;
+  box-shadow: 4px 4px 20px #c8382f;
+  border-radius: 100px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+#snake-eater-button button {
+  width: 306px;
+  height: 55px;
+  flex: 1;
+
+  background: #006daa;
+  border: none;
+  box-shadow: 4px 4px 20px #347ca4;
+  border-radius: 100px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#vektor-kommander-button button {
+  width: 306px;
+  height: 55px;
+  flex: 1;
+
+  background: #aa00a3;
+  border: none;
+  box-shadow: 4px 4px 20px #b639b1;
+  border-radius: 100px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+} */
+
+.other-activities {
+  /* OTHER ACTIVITIES */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  background: linear-gradient(
+    86.74deg,
+    #6587ff 22.35%,
+    #f83eda 67.19%,
+    #ff4c25 113.51%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button:hover {
+  background: white !important;
+  cursor: pointer;
+  border: 1px solid white !important;
+  box-shadow: 4px 4px 20px white !important;
+  color: black !important;
+}
