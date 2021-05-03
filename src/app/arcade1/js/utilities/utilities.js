@@ -120,5 +120,5 @@ export function getPoint(points, value) {
 }
 
 export const snakeReset = (p5) => {
-  state.snake = new Snake(p5, state.w, state.h);
+  state.snake = new Snake(p5, state.windowWidth * 0.1, state.windowHeight / 2);
 };
